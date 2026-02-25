@@ -7,6 +7,7 @@ This directory contains AI agent skills -- reusable instruction sets and referen
 | Skill | Description | Language |
 |-------|-------------|----------|
 | [agent-framework-azure-ai-py](agent-framework-azure-ai-py/SKILL.md) | Build Azure AI Foundry agents with the Microsoft Agent Framework | Python |
+| [azure-mgmt-fabric-py](azure-mgmt-fabric-py/SKILL.md) | Manage Microsoft Fabric capacities and resources | Python |
 
 ## Skill Structure
 

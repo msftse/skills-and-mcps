@@ -7,13 +7,17 @@ A curated collection of AI skills and MCP (Model Context Protocol) server config
 ```
 .
 ├── skills/                          # AI agent skills
-│   └── agent-framework-azure-ai-py/ # Azure AI Foundry agent skill
+│   ├── agent-framework-azure-ai-py/ # Azure AI Foundry agent skill
+│   │   ├── SKILL.md                 # Skill definition and usage
+│   │   └── references/              # Detailed reference docs
+│   │       ├── tools.md             # Hosted tool patterns
+│   │       ├── mcp.md               # MCP integration guide
+│   │       ├── threads.md           # Thread & conversation management
+│   │       ├── advanced.md          # Structured outputs, OpenAPI, etc.
+│   │       └── acceptance-criteria.md # Code validation criteria
+│   └── azure-mgmt-fabric-py/       # Azure Fabric Management skill
 │       ├── SKILL.md                 # Skill definition and usage
-│       └── references/              # Detailed reference docs
-│           ├── tools.md             # Hosted tool patterns
-│           ├── mcp.md               # MCP integration guide
-│           ├── threads.md           # Thread & conversation management
-│           ├── advanced.md          # Structured outputs, OpenAPI, etc.
+│       └── references/
 │           └── acceptance-criteria.md # Code validation criteria
 ├── prds/                            # Product Requirements Documents
 │   └── link-in-bio-page-builder/    # Link-in-Bio page builder PRD
@@ -35,6 +39,19 @@ Build Azure AI Foundry agents using the Microsoft Agent Framework Python SDK (`a
 - Function tools and structured outputs
 
 **Source:** [microsoft/skills](https://github.com/microsoft/skills/tree/main/.github/plugins/azure-sdk-python/skills/agent-framework-azure-ai-py)
+
+### [Azure Fabric Management (Python)](skills/azure-mgmt-fabric-py/SKILL.md)
+
+Manage Microsoft Fabric capacities and resources programmatically using `azure-mgmt-fabric`. Covers:
+
+- Creating, updating, and deleting Fabric capacities
+- Suspending and resuming capacities for cost control
+- SKU management (F2 through F2048)
+- Name availability checks
+- Long-running operation (LRO) patterns
+- Async client usage
+
+**Source:** [microsoft/skills](https://github.com/microsoft/skills/tree/main/.github/plugins/azure-sdk-python/skills/azure-mgmt-fabric-py)
 
 ## PRDs
 

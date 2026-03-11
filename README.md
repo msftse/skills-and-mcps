@@ -15,10 +15,18 @@ A curated collection of AI skills and MCP (Model Context Protocol) server config
 │   │       ├── threads.md           # Thread & conversation management
 │   │       ├── advanced.md          # Structured outputs, OpenAPI, etc.
 │   │       └── acceptance-criteria.md # Code validation criteria
-│   └── azure-mgmt-fabric-py/       # Azure Fabric Management skill
+│   ├── azure-mgmt-fabric-py/       # Azure Fabric Management skill
+│   │   ├── SKILL.md                 # Skill definition and usage
+│   │   └── references/
+│   │       └── acceptance-criteria.md # Code validation criteria
+│   └── drawio-mcp-diagramming/      # Draw.io MCP diagramming skill
 │       ├── SKILL.md                 # Skill definition and usage
-│       └── references/
-│           └── acceptance-criteria.md # Code validation criteria
+│       ├── references/
+│       │   ├── REFERENCE.md         # Icon catalog & refresh commands
+│       │   ├── azure2-complete-catalog.txt
+│       │   └── layout-antipatterns.md
+│       └── scripts/
+│           └── search_azure2_icons_github.py
 ├── prds/                            # Product Requirements Documents
 │   └── link-in-bio-page-builder/    # Link-in-Bio page builder PRD
 │       └── PRD.md
@@ -52,6 +60,18 @@ Manage Microsoft Fabric capacities and resources programmatically using `azure-m
 - Async client usage
 
 **Source:** [microsoft/skills](https://github.com/microsoft/skills/tree/main/.github/plugins/azure-sdk-python/skills/azure-mgmt-fabric-py)
+
+### [Draw.io MCP Diagramming](skills/drawio-mcp-diagramming/SKILL.md)
+
+Create and edit architecture diagrams using the Draw.io MCP tool (`drawio/create_diagram`) with reliable Azure icon rendering. Covers:
+
+- Creating architecture diagrams via MCP
+- Azure service icon discovery and validation
+- Icon catalog refresh scripts
+- Layout anti-patterns and best practices
+- Troubleshooting missing or broken Azure icons
+
+**Source:** [thomast1906/github-copilot-agent-skills](https://github.com/thomast1906/github-copilot-agent-skills/tree/main/.github/skills/drawio-mcp-diagramming)
 
 ## PRDs
 
